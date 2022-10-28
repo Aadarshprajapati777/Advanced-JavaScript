@@ -44,7 +44,11 @@ const array = [
   console.log('maparray',mapArray)
   
   //Filter the array to only include users who are on team: red
-  
+  const filterArray=array.filter(redteamuser=>{
+
+    return redteamuser.team==="red";
+  })
+  console.log('filter', filterArray)
   
   //Find out the total score of all users using reduce
   
